@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>影片搜索-亚洲热门电影</title>
+  <meta name="description" content="搜索亚洲热门电影、热门影片、地区、年份与题材分类。">
+  <meta name="keywords" content="影片搜索,亚洲热门电影,亚洲电影,热门影片,电影片库,高清免费在线,精选影片,电影分类">
+  <link rel="stylesheet" href="./assets/style.css">
+  
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-container">
+    <a class="brand" href="./index.html" aria-label="亚洲热门电影">
+      <span class="brand-icon">▶</span>
+      <span class="brand-copy">
+        <strong>亚洲热门电影</strong>
+        <em>高清免费在线观看</em>
+      </span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a class="" href="./index.html">首页</a><a class="" href="./categories.html">分类</a><a class="" href="./ranking.html">排行榜</a><a class="is-active" href="./search.html">搜索</a>
+    </nav>
+    <form class="header-search" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索影片、地区、年份" aria-label="搜索影片">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="menu-toggle" type="button" aria-label="展开导航">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  <div class="mobile-menu">
+    <nav aria-label="移动导航">
+      <a class="" href="./index.html">首页</a><a class="" href="./categories.html">分类</a><a class="" href="./ranking.html">排行榜</a><a class="is-active" href="./search.html">搜索</a>
+    </nav>
+    <form class="mobile-search" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索片名或关键词" aria-label="移动搜索">
+      <button type="submit">搜索</button>
+    </form>
+    <div class="mobile-category-links">
+      <a href="./category-asia-hot.html">亚洲热映</a><a href="./category-selected-movies.html">精选影片</a><a href="./category-drama-story.html">剧情佳作</a><a href="./category-action-adventure.html">动作冒险</a>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="page-hero search-hero">
+    <div>
+      <span class="page-eyebrow">快速检索</span>
+      <h1>搜索亚洲热门电影</h1>
+      <p>输入片名、地区、类型、年份或标签，快速找到想看的影片。</p>
+    </div>
+  </section>
+  <section class="content-block search-page">
+    <div class="search-board">
+      <input id="searchText" type="search" placeholder="输入片名、地区、类型、年份或标签" autocomplete="off">
+      <select id="searchType">
+        <option value="">全部类型</option>
+        <option value="电影">电影</option>
+        <option value="电视剧">电视剧</option>
+      </select>
+      <button id="searchButton" type="button">搜索</button>
+    </div>
+    <div id="searchResults" class="movie-grid catalog-grid"></div>
+    <div id="searchEmpty" class="empty-state">暂未找到匹配影片</div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-icon">▶</span>
+      <div>
+        <strong>亚洲热门电影</strong>
+        <p>聚合亚洲热门电影内容，按题材、热度和地区整理，方便浏览当前关注度较高的影片。</p>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="./index.html">首页</a>
+      <a href="./categories.html">分类</a>
+      <a href="./ranking.html">排行榜</a>
+      <a href="./search.html">搜索</a>
+      <a href="./category-asia-hot.html">亚洲热映</a><a href="./category-selected-movies.html">精选影片</a><a href="./category-drama-story.html">剧情佳作</a><a href="./category-action-adventure.html">动作冒险</a>
+    </div>
+    <p class="copyright">© 2026 亚洲热门电影 · 高清热门影片片库</p>
+  </div>
+</footer>
+<script src="./assets/main.js"></script>
+<script src="./assets/search-index.js"></script>
+<script src="./assets/search.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

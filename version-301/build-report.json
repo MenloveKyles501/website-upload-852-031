@@ -1,0 +1,20 @@
+{
+  "parsed_movies": 2000,
+  "generated_movie_pages": 2000,
+  "category_counts": {
+    "精选电影": 200,
+    "热门剧集": 200,
+    "动作冒险": 200,
+    "悬疑犯罪": 200,
+    "爱情喜剧": 200,
+    "科幻奇幻": 200,
+    "剧情家庭": 200,
+    "动画青春": 200,
+    "经典高分": 200,
+    "多地区合集": 200
+  },
+  "video_urls_extracted_from_original_js": 150,
+  "unique_video_urls": 19,
+  "html_pages": 2015,
+  "site_logo": "亚洲高清电影"
+}
